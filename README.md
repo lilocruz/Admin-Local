@@ -6,3 +6,6 @@ Requisitos:
 #Powershell ActiveDirectory Module
 
 PS> Import-Module ActiveDirectory
+
+PS> . .\admin-local.ps1
+
