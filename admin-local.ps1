@@ -44,18 +44,18 @@ function Ob-AdminLocal2csv {
     $NombreFolder = "Reporte_AdminLocal("+ $Fecha + ")"
     New-Item -Path ".\$NombreFolder" -ItemType Directory -Force | Out-Null
 
-        foreach($Computer in $NombreCompu)
+        foreach($Computadora in $NombreCompu)
         {
             try
             {
-                $PC      = Get-ADComputer $Computer
+                $PC      = Get-ADComputer $Computadora
                 $Name    = $PC.Name
                 $CountPC = @($NombreCompu).count
             }
 
             catch
             {
-                Write-Host "No se puede obtener la computadora $Computer" -ForegroundColor Yellow -BackgroundColor Red
+                Write-Host "No se puede obtener la computadora $Computadora" -ForegroundColor Yellow -BackgroundColor Red
                 Add-Content -Path ".\$NombreFolder\ErrorLog.txt" "$Name"
                 continue
             }
