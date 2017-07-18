@@ -3,7 +3,7 @@
 .SYNOPSIS
     .
 .DESCRIPCION
-    El siguiente script encontrara todos los administradores locales de la maquina pasada como parametros.
+    El siguiente script encontrara todos los administradores locales de la maquina pasada como parametro.
 
 .PARAMETRO Ruta
     Este parametro sera el OU, DN o el SearchBase completo donde se desea buscar.
