@@ -13,6 +13,9 @@ PS> . .\admin-local.ps1
     C:\PS> Ob-AdminLocal2csv
     
     Obtener los grupos de administrador local de todos los equipos
+    
     C:\PS> Ob-AdminLocal2csv -NombreCompu PC1,PC2,PC3
+    
     Obtener los grupos de administrador local de las computadoras PC,PC2,PC3
+    
     C:\PS> Ob-AdminLocal2csv -Ruta "OU=Computers,DC=Dominio,DC=ejemplo,DC=com"
