@@ -30,7 +30,7 @@
 function Ob-AdminLocal2csv {
     Param(
             $Ruta          = (Get-ADDomain).DistinguishedName,   
-            $NombreCompu  = (Get-ADComputer -Filter * -Server (Get-ADDomain).DNsroot -SearchBase $Path -Properties Enabled | Where-Object {$_.Enabled -eq "True"})
+            $NombreCompu  = (Get-ADComputer -Filter * -Server (Get-ADDomain).DNsroot -SearchBase $Ruta -Properties Enabled | Where-Object {$_.Enabled -eq "True"})
          )
 
     begin{
